@@ -6,7 +6,7 @@
         "Life is like a game, there are may players. If you don't play with
         them, they'll play with you."
       </p>
-      <div class="action-otr">
+      <div class="action-otr" v-if="!mining">
         <input
           type="number"
           min="1"
@@ -17,6 +17,9 @@
         <button class="btn-fill btn-create" @click="mint">
           Mint {{ total }}
         </button>
+      </div>
+      <div class="action-otr" v-else>
+        <button class="btn-fill btn-create">Mining...</button>
       </div>
       <p class="desc body-m">
         "There's this saying in investing, "Try not to keep all your eggs in the
@@ -37,6 +40,11 @@ export default {
     async mint() {
       if (this.total > 101) this.total = 101;
       await this.$store.dispatch("mintLegos", this.total);
+    },
+  },
+  computed: {
+    mining() {
+      return this.$store.getters.mining;
     },
   },
 };

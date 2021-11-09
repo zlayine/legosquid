@@ -4,7 +4,7 @@
   </button>
   <div class="d-flex" v-else-if="nav">
     <span class="btn-fill btn-explore">Connected</span>
-    <button class="btn-fill btn-explore" @click="withdraw" v-if="!owner">
+    <button class="btn-fill btn-explore" @click="withdraw" v-if="owner">
       Withdraw
     </button>
   </div>

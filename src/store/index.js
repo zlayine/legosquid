@@ -24,8 +24,8 @@ export default new Vuex.Store({
     owner: false,
     notification: false,
     notification_msg: "",
-    contract_address: "0x6A4664250f79e36BB556D64B36847957911178b0",
-    opensea: "https://testnets.opensea.io/collection/lego-v3",
+    contract_address: "0x26af10ebf1ed1dc9b04c201553deeb22bf320799",
+    opensea: "https://testnets.opensea.io/collection/legosquids",
   },
   getters: {
     account: (state) => state.account,
@@ -72,7 +72,7 @@ export default new Vuex.Store({
         }
         await dispatch("checkNetwork");
         await dispatch("fetchOwner");
-        // await dispatch("setupEventListeners");
+        await dispatch("setupEventListeners");
       } catch (error) {
         console.log(error);
         commit("setError", "Account request refused.");
@@ -160,16 +160,18 @@ export default new Vuex.Store({
       try {
         const connectedContract = await dispatch("getContract");
         const owner = await connectedContract.owner();
-        if (state.account == owner) commit("setOwner", true);
+        if (state.account == owner.toLowerCase()) commit("setOwner", true);
       } catch (error) {
         console.log(error);
       }
     },
-    async mintLegos({ commit, dispatch }, total) {
+    async mintLegos({ state, commit, dispatch }, total) {
       try {
         const connectedContract = await dispatch("getContract");
+        let value = "0.025";
+        if (state.owner) value = "0";
         const mintTxn = await connectedContract.mint(total, {
-          value: ethers.utils.parseEther("0.025"),
+          value: ethers.utils.parseEther(value),
         });
         await mintTxn.wait();
       } catch (error) {
