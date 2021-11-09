@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desccriptions" content="Get one or more of these exclusive 10,000 unique NFTs digital collectibles living on the Ethereum blockchain inspired by the Movie Series SQUID GAME">
+    <link rel="icon" href="assets/img/lego-squid-game-icon.png" sizes="16x16">
+    <title>LEGO Squid Game NFT Collection - Get them now!</title>
+    <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/libs/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/libs/progress.js-master/src/progressjs.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+
+    <div class="loader"></div>
+
+    <!--=======================================
+            Modal Start Here
+    ========================================-->
+
+        <div id="myNav" class="overlay-content-otr">
+            <div class="modal-content-custom">
+                <div class="overlay-content">
+                    <svg class="icon-close" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 1L1 17M17 17L1 1" stroke="#CFCFCF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <div class="logo-otr">
+                        <a href="./" class="logo-inr">
+                            <img class="logo" src="assets/img/lego-squid-game-logo.svg" alt="brand-logo">
+                        </a>
+                    </div>
+                    <div class="action-otr">
+                        <a href="Create.html" class="btn-fill btn-create">Connect Wallet</a>
+                        <a href="Connect-Wallet.html" class="btn-outline1 btn-wallet">Explore on OpenSea</a>
+                    </div>
+                    <ul class="icon-ul">
+                        <li class="icon-li">
+                            <a href="" class="icon-a">
+                                <svg class="icon" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 28c6.627 0 12-5.373 12-12S22.627 4 16 4 4 9.373 4 16s5.373 12 12 12z" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11h-2a3 3 0 00-3 3v14M12 18h8" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </li>
+                        <li class="icon-li">
+                            <a href="" class="icon-a">
+                                <svg class="icon" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 25s5-1 6-4c0 0-8-3-6-14 0 0 4 5 10 6v-2a5 5 0 019.584-2H30l-4 4c0 7-5 14-14 14-4 0-6-2-6-2z" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </li>
+                        <li class="icon-li">
+                            <a href="" class="icon-a">
+                                <svg class="icon" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 19.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM20 19.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" fill="#999"/><path d="M9.3 10A21.917 21.917 0 0116 9a21.916 21.916 0 016.7 1M22.7 22a21.917 21.917 0 01-6.7 1 21.917 21.917 0 01-6.7-1" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.38 22.761l1.504 3.006a.996.996 0 001.123.526c3.068-.75 5.712-2.057 7.638-3.73a1.007 1.007 0 00.31-1.05L25.706 7.358a1.002 1.002 0 00-.578-.639c-1.2-.491-2.44-.875-3.708-1.148a1.002 1.002 0 00-1.165.66l-.997 2.99M12.62 22.76l-1.504 3.007a.997.997 0 01-1.124.526c-3.067-.75-5.711-2.057-7.637-3.73a1.007 1.007 0 01-.309-1.05L6.293 7.358a1.003 1.003 0 01.578-.64c1.2-.49 2.44-.874 3.708-1.147a1.002 1.002 0 011.165.66l.997 2.99" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 19.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM20 19.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" fill="#999"/><path d="M9.3 10A21.917 21.917 0 0116 9a21.916 21.916 0 016.7 1M22.7 22a21.917 21.917 0 01-6.7 1 21.917 21.917 0 01-6.7-1" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.38 22.761l1.504 3.006a.996.996 0 001.123.526c3.068-.75 5.712-2.057 7.638-3.73a1.007 1.007 0 00.31-1.05L25.706 7.358a1.002 1.002 0 00-.578-.639c-1.2-.491-2.44-.875-3.708-1.148a1.002 1.002 0 00-1.165.66l-.997 2.99M12.62 22.76l-1.504 3.007a.997.997 0 01-1.124.526c-3.067-.75-5.711-2.057-7.637-3.73a1.007 1.007 0 01-.309-1.05L6.293 7.358a1.003 1.003 0 01.578-.64c1.2-.49 2.44-.874 3.708-1.147a1.002 1.002 0 011.165.66l.997 2.99" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </li>
+                        <li class="icon-li">
+                            <a href="" class="icon-a">
+                                <svg class="icon" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 11l-4 17M7.693 19.57A10 10 0 1126 14c0 5.523-4 9-8 9s-5.204-2.633-5.204-2.633" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </li>
+                        <li class="icon-li">
+                            <a href="" class="icon-a">
+                                <svg class="icon" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 16l-6-4v8l6-4z" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 16c0 3.72.384 5.902.676 7.023a1.99 1.99 0 001.204 1.362C9.065 25.993 16 25.95 16 25.95s6.935.044 11.12-1.564a1.99 1.99 0 001.204-1.362C28.616 21.902 29 19.72 29 16c0-3.72-.384-5.902-.676-7.023a1.99 1.99 0 00-1.205-1.362C22.935 6.007 16 6.05 16 6.05S9.065 6.007 4.88 7.615a1.99 1.99 0 00-1.204 1.362C3.384 10.098 3 12.28 3 16z" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </li>
+                        <li class="icon-li">
+                            <a href="" class="icon-a">
+                                <svg class="icon" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 16.859l11.24 9.89a1 1 0 001.635-.527l4.702-20.516a1 1 0 00-1.34-1.154l-23.07 9.063a1 1 0 00.17 1.911L11 16.86zM11 16.86L28.014 4.57" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.613 21.799l-3.906 3.906A1 1 0 0111 24.998v-8.14" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="copy-name body-s">
+                        Copyright © 2021 | All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--=======================================
+                Modal End Here
+    ========================================-->
+
+    <!--=======================================
+                Navbar Start Here
+    ========================================-->
+
+        <div class="navbar-main-2 nav-home3">
+            <div class="container-fluid">
+                <div class="navbar-inr-2">
+                    <div class="burger-menu">
+                        <div class="burger-icon-otr burger-click">
+                            <svg class="burger-icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.75 12h16.5M4 6h9M11 18h9" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <a href="./" class="logo-otr">
+                            <img class="logo-img" src="assets/img/lego-squid-game-logo.svg" alt="brand-logo">
+                        </a>
+                    </div>
+                    <div class="input-main">
+                        
+                    </div>
+                    <div class="navigation-otr">
+                        <ul class="navigation-inr"> 
+                            <li class="dots">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="action-otr">
+                        <div class="profile-otr">
+                            <a href="" class="btn-fill btn-explore">Connect Wallet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--=======================================
+                Navbar End Here
+    ========================================-->
+
+    <!--=======================================
+                Hero-Home-3 Start Here
+    ========================================-->
+
+        <div class="home3-hero">
+            <div class="container-fluid">
+                <div class="row row-content">
+                    <div class="col-lg-6 col-head-otr">
+                        <div class="col-head-inr">
+                            <h1 class="head heading-h1">Lego Squid Game <br/>NFT Collection</h1>
+                            <div class="boxes-main">
+                                <div class="auction-main">
+                                    <p class="body-mb acution">Launch Date</p>
+                                    <div id="clock" class="timer">
+                                        <div class="days-main main">
+                                            <p class="heading-h3 time-inr" id="days"></p>
+                                            <p class="days-p body-mb">Days</p>
+                                        </div>
+                                        <div class="hours-main main">
+                                            <p class="heading-h3 time-inr" id="hours"></p>
+                                            <p class="hours-p body-mb">Hours</p>
+                                        </div>
+                                        <div class="minutes-main main">
+                                            <p class="heading-h3 time-inr" id="minutes"></p>
+                                            <p class="minutes-p body-mb">Minutes</p>
+                                        </div>
+                                        <div class="seconds-main main">
+                                            <p class="heading-h3 time-inr" id="seconds"></p>
+                                            <p class="seconds-p body-mb">Seconds</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-text-otr">
+                        <div class="col-text-inr">
+                            <p class="desc body-m">
+                                Get one or more of these exclusive 10,000 unique NFTs collectibles living on the Ethereum blockchain inspired by the Movie Series "SQUID GAME".
+                            </p>
+                            <div class="btn-otr">
+                                <a href="" class="btn-fill btn-explore">Connect Wallet</a>
+                                <a href="" class="btn-outline1 btn-create">Explore on OpenSea</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="row row-imgs">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-img-otr box-1">
+                            <div class="col-img-inr">
+                                <img class="about-img img-fluid" src="assets/img/lego-squid-game-21.jpg" alt="lego squid game nft collection image">
+                            </div>
+                            <div class="col-img-inr">
+                                <img class="about-img img-fluid" src="assets/img/lego-squid-game-22.jpg" alt="lego squid game nft collection image">
+                            </div>
+                            <div class="col-img-inr">
+                                <img class="about-img img-fluid" src="assets/img/lego-squid-game-09.jpg" alt="lego squid game nft collection image">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-img-otr box-2">
+                            <div class="col-img-inr">
+                                <img class="about-img img-fluid" src="assets/img/lego-squid-game-06.jpg" alt="lego squid game nft collection image">
+                            </div>
+                            <div class="col-img-inr">
+                                <img class="about-img img-fluid" src="assets/img/lego-squid-game-33.jpg" alt="lego squid game nft collection image">
+                            </div>
+                            <div class="col-img-inr">
+                                <img class="about-img img-fluid" src="assets/img/lego-squid-game-35.jpg" alt="lego squid game nft collection image">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-img-otr box-3">
+                            <div class="col-img-inr">
+                                <img class="about-img img-fluid" src="assets/img/lego-squid-game-29.jpg" alt="lego squid game nft collection image">
+                            </div>
+                            <div class="col-img-inr">
+                                <img class="about-img img-fluid" src="assets/img/lego-squid-game-03.jpg" alt="lego squid game nft collection image">
+                            </div>
+                            <div class="col-img-inr">
+                                <img class="about-img img-fluid" src="assets/img/lego-squid-game-32.jpg" alt="lego squid game nft collection image">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-img-otr box-4">
+                            <div class="col-img-inr">
+                                <img class="about-img img-fluid" src="assets/img/lego-squid-game-02.jpg" alt="lego squid game nft collection image">
+                            </div>
+                            <div class="col-img-inr">
+                                <img class="about-img img-fluid" src="assets/img/lego-squid-game-13.jpg" alt="lego squid game nft collection image">
+                            </div>
+                            <div class="col-img-inr">
+                                <img class="about-img img-fluid" src="assets/img/lego-squid-game-15.jpg" alt="lego squid game nft collection image">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-img-otr box-5">
+                            <div class="col-img-inr">
+                                <img class="about-img img-fluid" src="assets/img/lego-squid-game-34.jpg" alt="lego squid game nft collection image">
+                            </div>
+                            <div class="col-img-inr">
+                                <img class="about-img img-fluid" src="assets/img/lego-squid-game-08.jpg" alt="lego squid game nft collection image">
+                            </div>
+                            <div class="col-img-inr">
+                                <img class="about-img img-fluid" src="assets/img/lego-squid-game-17.jpg" alt="lego squid game nft collection image">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-img-otr box-6">
+                            <div class="col-img-inr">
+                                <img class="about-img img-fluid" src="assets/img/lego-squid-game-23.jpg" alt="lego squid game nft collection image">
+                            </div>
+                            <div class="col-img-inr">
+                                <img class="about-img img-fluid" src="assets/img/lego-squid-game-04.jpg" alt="lego squid game nft collection image">
+                            </div>
+                            <div class="col-img-inr">
+                                <img class="about-img img-fluid" src="assets/img/lego-squid-game-16.jpg" alt="lego squid game nft collection image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--=======================================
+                Hero-Home-3 End Here
+    ========================================-->
+
+    <!--=======================================
+                Work Start Here
+    ========================================-->
+
+        <div class="work-main">
+            <div class="container-fluid">
+                <div class="wrapper">
+                    <h3 class="head heading-h3">How it works</h3>
+                </div>
+                <div class="row-work">
+                    <div id="tab-work1" class="tab-content active">
+                        <div class="row row-work-inr">
+                            <div class="col-lg-4 col-md-6 col-work-otr">
+                                <div class="col-work-inr box1">
+                                    <div class="icon-otr">
+                                        <div class="icon-inr">
+                                            <span class="bg-icon"></span>
+                                            <svg class="icon" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M5 24a2 2 0 002 2h20a1 1 0 001-1V11a1 1 0 00-1-1H7a2 2 0 01-2-2v16z" fill="#fff"/><path d="M5 8v16a2 2 0 002 2h20a1 1 0 001-1V11a1 1 0 00-1-1H7a2 2 0 01-2-2zm0 0a2 2 0 012-2h17" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22.5 19.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" fill="#fff"/></svg>
+                                        </div>
+                                        <h4 class="heading heading-h4">Connect Your Wallet</h4>
+                                    </div>
+                                    <p class="desc body-m">Set up your wallet and then connect to Mint an NFT (0.0.25 ETH) or more.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-work-otr">
+                                <div class="col-work-inr box2">
+                                    <div class="icon-otr">
+                                        <div class="icon-inr">
+                                            <span class="bg-icon"></span>
+                                            <svg class="icon" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M16 16H5.5V6.5a1 1 0 011-1H16V16z" fill="#000"/><path d="M25.5 5.5h-19a1 1 0 00-1 1v19a1 1 0 001 1h19a1 1 0 001-1v-19a1 1 0 00-1-1zM16 5.5v21M26.5 16h-21" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </div>
+                                        <h4 class="heading heading-h4">View Your Minted NFTs in OpenSea</h4>
+                                    </div>
+                                    <p class="desc body-m">"Doing something is always more fun than just watching."</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-work-otr">
+                                <div class="col-work-inr box3">
+                                    <div class="icon-otr">
+                                        <div class="icon-inr">
+                                            <span class="bg-icon"></span>
+                                            <svg class="icon" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M7.818 18h15.695a2 2 0 001.967-1.642L27 8H6l1.818 10z" fill="#fff"/><path d="M23 23H8.727L5.24 3.821A1 1 0 004.256 3H2M10 28a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM23 28a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.818 18h15.695a2 2 0 001.967-1.642L27 8H6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </div>
+                                        <h4 class="heading heading-h4">Sell Your NFTs or Hold for rewards</h4>
+                                    </div>
+                                    <p class="desc body-m">"You can make a lot by playing such games."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--=======================================
+                Work End Here
+    ========================================-->
+    <div class="hero-5">
+        <div class="hero-inr">
+            <div class="row row-custom">
+                <div class="col-lg-7 col-carousel-otr">
+                    <div class="col-carousel-inr owl-carousel owl-theme owl-loaded owl-drag" id="hero5-carousel">
+                        <div class="col-img-inr">
+                            <img class="img1 img-fluid" src="../assets/img/lego-squid-game-full-23.jpg" alt="squid game characters NFT">
+                            <a href="#." class="profile-otr">
+                                <div class="profile-inr">
+                                    <div class="username-otr">
+                                        <p class="user-info body-mb">Hairy Guy</p>
+                                        <p class="username body-s">Lego Squid Game</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-img-inr">
+                            <img class="img1 img-fluid" src="../assets/img/lego-squid-game-full-33.jpg" alt="squid game characters NFT">
+                            <a href="#." class="profile-otr">
+                                <div class="profile-inr">
+                                    <div class="username-otr">
+                                        <p class="user-info body-mb">Don't Mes With</p>
+                                        <p class="username body-s">Lego Squid Game</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-img-inr">
+                            <img class="img1 img-fluid" src="../assets/img/lego-squid-game-full-03.jpg" alt="squid game characters NFT">
+                            <a href="#." class="profile-otr">
+                                <div class="profile-inr">
+                                    <div class="username-otr">
+                                        <p class="user-info body-mb">Frustrated</p>
+                                        <p class="username body-s">Lego Squid Game</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-img-inr">
+                            <img class="img1 img-fluid" src="../assets/img/lego-squid-game-full-04.jpg" alt="squid game characters NFT">
+                            <a href="#." class="profile-otr">
+                                <div class="profile-inr">
+                                    <div class="username-otr">
+                                        <p class="user-info body-mb">Worried</p>
+                                        <p class="username body-s">Lego Squid Game</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-img-inr">
+                            <img class="img1 img-fluid" src="../assets/img/lego-squid-game-full-09.jpg" alt="squid game characters NFT">
+                            <a href="#." class="profile-otr">
+                                <div class="profile-inr">
+                                    <div class="username-otr">
+                                        <p class="user-info body-mb">Focused</p>
+                                        <p class="username body-s">Lego Squid Game</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-img-inr">
+                            <img class="img1 img-fluid" src="../assets/img/lego-squid-game-full-06.jpg" alt="squid game characters NFT">
+                            <a href="#." class="profile-otr">
+                                <div class="profile-inr">
+                                    <div class="username-otr">
+                                        <p class="user-info body-mb">Happy</p>
+                                        <p class="username body-s">Lego Squid Game</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-img-inr">
+                            <img class="img1 img-fluid" src="../assets/img/lego-squid-game-full-07.jpg" alt="squid game characters NFT">
+                            <a href="#." class="profile-otr">
+                                <div class="profile-inr">
+                                    <div class="username-otr">
+                                        <p class="user-info body-mb">Red Hair</p>
+                                        <p class="username body-s">Lego Squid Game</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-img-inr">
+                            <img class="img1 img-fluid" src="../assets/img/lego-squid-game-full-08.jpg" alt="squid game characters NFT">
+                            <a href="#." class="profile-otr">
+                                <div class="profile-inr">
+                                    <div class="username-otr">
+                                        <p class="user-info body-mb">Cool Guy</p>
+                                        <p class="username body-s">Lego Squid Game</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-content-otr">
+                    <div class="col-content-inr">
+                        <h2 class="heading-h1 heading">Mint to find out which Player you are.</h2>
+                        <p class="desc body-m">
+                            "Life is like a game, there are may players. If you don't play with them, they'll play with you."
+                        </p>
+                        <div class="action-otr">
+                            <a href="" class="btn-fill btn-create">Mint 1</a>
+                            <a href="" class="btn-outline2 btn-wallet">or Mint Multiple</a>
+                        </div>
+                        <p class="desc body-m">
+                            "There's this saying in investing, "Try not to keep all your eggs in the same basket."
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img class="shape-bg" src="../assets/img/bg-shape-home5.svg" alt="shape">
+        </div>
+    </div>
+    <!--=======================================
+            Live Auction's Start Here
+    ========================================-->
+
+        <div class="live-acution">
+            <div class="container-fluid">
+                <div class="live-auction-inr">
+                    <div class="heading-otr">
+                        <div class="head-otr">
+                            <span class="dot"></span>
+                            <h3 class="heading heading-h3">Meet Some of the Players</h3>
+                        </div>
+                    </div>
+                    <span class="line"></span>
+                    <div class="row row-custom owl-carousel owl-theme" id="live-auctions">
+                        <div class="col-otr">
+                            <div class="col-inr box1">
+                                <div class="img-otr">
+                                    <a href="#." class="tilt-otr img-tilt" data-tilt>
+                                        <img class="img-inr img-fluid" src="assets/img/lego-squid-game-24.jpg" alt="artwork-img">
+                                    </a>
+                                </div>
+                                <a href="#." class="body-mb box-head"></a>
+                                <div class="bid-main">
+                                    <p class="body-sb bid">Mint Fee</p>
+                                    <p class="body-mb eth">0.025 ETH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-otr">
+                            <div class="col-inr box2">
+                                <div class="img-otr">
+                                    <a href="#." class="tilt-otr img-tilt" data-tilt>
+                                        <img class="img-inr img-fluid" src="assets/img/lego-squid-game-18.jpg" alt="artwork-img">
+                                    </a>
+                                </div>
+                                <a href="#." class="body-mb box-head"></a>
+                                <div class="bid-main">
+                                    <p class="body-sb bid">Mint Fee</p>
+                                    <p class="body-mb eth">0.025 ETH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-otr">
+                            <div class="col-inr box3">
+                                <div class="img-otr">
+                                    <a href="#." class="tilt-otr img-tilt" data-tilt>
+                                        <img class="img-inr img-fluid" src="assets/img/lego-squid-game-04.jpg" alt="artwork-img">
+                                    </a>
+                                </div>
+                                <a href="#." class="body-mb box-head"></a>
+                                <div class="bid-main">
+                                    <p class="body-sb bid">Mint Fee</p>
+                                    <p class="body-mb eth">0.025 ETH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-otr">
+                            <div class="col-inr box4">
+                                <div class="img-otr">
+                                    <a href="#." class="tilt-otr img-tilt" data-tilt>
+                                        <img class="img-inr img-fluid" src="assets/img/lego-squid-game-16.jpg" alt="artwork-img">
+                                    </a>
+                                </div>
+                                <a href="#." class="body-mb box-head"></a>
+                                <div class="bid-main">
+                                    <p class="body-sb bid">Mint Fee</p>
+                                    <p class="body-mb eth">0.025 ETH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-otr">
+                            <div class="col-inr box5">
+                                <div class="img-otr">
+                                    <a href="#." class="tilt-otr img-tilt" data-tilt>
+                                        <img class="img-inr img-fluid" src="assets/img/lego-squid-game-27.jpg" alt="artwork-img">
+                                    </a>
+                                </div>
+                                <a href="#." class="body-mb box-head"></a>
+                                <div class="bid-main">
+                                    <p class="body-sb bid">Mint Fee</p>
+                                    <p class="body-mb eth">0.025 ETH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-otr">
+                            <div class="col-inr box6">
+                                <div class="img-otr">
+                                    <a href="#." class="tilt-otr img-tilt" data-tilt>
+                                        <img class="img-inr img-fluid" src="assets/img/lego-squid-game-23.jpg" alt="artwork-img">
+                                    </a>
+                                </div>
+                                <a href="#." class="body-mb box-head"></a>
+                                <div class="bid-main">
+                                    <p class="body-sb bid">Mint Fee</p>
+                                    <p class="body-mb eth">0.025 ETH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-otr">
+                            <div class="col-inr box7">
+                                <div class="img-otr">
+                                    <a href="#." class="tilt-otr img-tilt" data-tilt>
+                                        <img class="img-inr img-fluid" src="assets/img/lego-squid-game-07.jpg" alt="artwork-img">
+                                    </a>
+                                </div>
+                                <a href="#." class="body-mb box-head"></a>
+                                <div class="bid-main">
+                                    <p class="body-sb bid">Mint Fee</p>
+                                    <p class="body-mb eth">0.025 ETH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-otr">
+                            <div class="col-inr box8">
+                                <div class="img-otr">
+                                    <a href="#." class="tilt-otr img-tilt" data-tilt>
+                                        <img class="img-inr img-fluid" src="assets/img/lego-squid-game-17.jpg" alt="artwork-img">
+                                    </a>
+                                </div>
+                                <a href="#." class="body-mb box-head"></a>
+                                <div class="bid-main">
+                                    <p class="body-sb bid">Mint Fee</p>
+                                    <p class="body-mb eth">0.025 ETH</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--=======================================
+            Call to Action Start Here
+    ========================================-->
+
+        <div class="call-to-action">
+            <div class="container-fluid">
+                <div class="call-to-action-inr">
+                    <div class="overlay">
+                        <div class="content">
+                            <h2 class="heading-h2 heading">
+                                Doing something is always <br> more fun than just watching
+                            </h2>
+                            <p class="desc body-m">
+                                Soon there'll be none to mint <br> else you buy from another player.
+                            </p>
+                            <div class="action-otr">
+                                <a href="" class="btn-fill-white btn-create">Mint an NFT for 0.025 ETH</a>
+                                <a href="" class="btn-outline-white btn-wallet">Explore on OpenSea</a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+    <!--=======================================
+            Call to Action End Here
+    ========================================-->
+
+    <!--=======================================
+            Footer Section Start Here
+    ========================================-->
+
+    <!--=======================================
+            Footer Section End Here
+    ========================================-->
+
+    <!--=======================================
+            Copy Section Start Here
+    ========================================-->
+    <div class="social-icons">
+    <ul class="icon-ul">
+        <li class="icon-li">
+            <a href="" class="icon-a">
+                <svg class="icon" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 28c6.627 0 12-5.373 12-12S22.627 4 16 4 4 9.373 4 16s5.373 12 12 12z" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11h-2a3 3 0 00-3 3v14M12 18h8" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </li>
+        <li class="icon-li">
+            <a href="" class="icon-a">
+                <svg class="icon" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 25s5-1 6-4c0 0-8-3-6-14 0 0 4 5 10 6v-2a5 5 0 019.584-2H30l-4 4c0 7-5 14-14 14-4 0-6-2-6-2z" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </li>
+        <li class="icon-li">
+            <a href="" class="icon-a">
+                <svg class="icon" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 19.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM20 19.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" fill="#999"/><path d="M9.3 10A21.917 21.917 0 0116 9a21.916 21.916 0 016.7 1M22.7 22a21.917 21.917 0 01-6.7 1 21.917 21.917 0 01-6.7-1" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.38 22.761l1.504 3.006a.996.996 0 001.123.526c3.068-.75 5.712-2.057 7.638-3.73a1.007 1.007 0 00.31-1.05L25.706 7.358a1.002 1.002 0 00-.578-.639c-1.2-.491-2.44-.875-3.708-1.148a1.002 1.002 0 00-1.165.66l-.997 2.99M12.62 22.76l-1.504 3.007a.997.997 0 01-1.124.526c-3.067-.75-5.711-2.057-7.637-3.73a1.007 1.007 0 01-.309-1.05L6.293 7.358a1.003 1.003 0 01.578-.64c1.2-.49 2.44-.874 3.708-1.147a1.002 1.002 0 011.165.66l.997 2.99" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 19.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM20 19.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" fill="#999"/><path d="M9.3 10A21.917 21.917 0 0116 9a21.916 21.916 0 016.7 1M22.7 22a21.917 21.917 0 01-6.7 1 21.917 21.917 0 01-6.7-1" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.38 22.761l1.504 3.006a.996.996 0 001.123.526c3.068-.75 5.712-2.057 7.638-3.73a1.007 1.007 0 00.31-1.05L25.706 7.358a1.002 1.002 0 00-.578-.639c-1.2-.491-2.44-.875-3.708-1.148a1.002 1.002 0 00-1.165.66l-.997 2.99M12.62 22.76l-1.504 3.007a.997.997 0 01-1.124.526c-3.067-.75-5.711-2.057-7.637-3.73a1.007 1.007 0 01-.309-1.05L6.293 7.358a1.003 1.003 0 01.578-.64c1.2-.49 2.44-.874 3.708-1.147a1.002 1.002 0 011.165.66l.997 2.99" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </li>
+        <li class="icon-li">
+            <a href="" class="icon-a">
+                <svg class="icon" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 11l-4 17M7.693 19.57A10 10 0 1126 14c0 5.523-4 9-8 9s-5.204-2.633-5.204-2.633" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </li>
+        <li class="icon-li">
+            <a href="" class="icon-a">
+                <svg class="icon" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 16l-6-4v8l6-4z" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 16c0 3.72.384 5.902.676 7.023a1.99 1.99 0 001.204 1.362C9.065 25.993 16 25.95 16 25.95s6.935.044 11.12-1.564a1.99 1.99 0 001.204-1.362C28.616 21.902 29 19.72 29 16c0-3.72-.384-5.902-.676-7.023a1.99 1.99 0 00-1.205-1.362C22.935 6.007 16 6.05 16 6.05S9.065 6.007 4.88 7.615a1.99 1.99 0 00-1.204 1.362C3.384 10.098 3 12.28 3 16z" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </li>
+        <li class="icon-li">
+            <a href="" class="icon-a">
+                <svg class="icon" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 16.859l11.24 9.89a1 1 0 001.635-.527l4.702-20.516a1 1 0 00-1.34-1.154l-23.07 9.063a1 1 0 00.17 1.911L11 16.86zM11 16.86L28.014 4.57" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.613 21.799l-3.906 3.906A1 1 0 0111 24.998v-8.14" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </li>
+    </ul>
+    </div>
+
+        <div class="copy-otr-home2">
+            <div class="container-fluid">
+                <div class="copy-inr">
+                    <a href="./" class="logo-otr">
+                        <img class="logo" src="assets/img/lego-squid-game-logo.svg" alt="brand-logo">
+                    </a>
+                    <div class="copy-name body-s">
+                        Copyright © 2021</a>
+                    </div>
+                    <div class="all-rights">
+                        <p class="all body-s">
+                            All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+    <!--=======================================
+            Copy Section End Here
+    ========================================-->
+    
+
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/jquery.countdown/jquery.countdown.js"></script>
+    <script src="assets/libs/tilt.js/dest/tilt.jquery.min.js"></script>
+    <script src="assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/libs/progress.js-master/src/progress.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+		
+</body>
+</html>
